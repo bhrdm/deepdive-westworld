@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Diagrammen Presentatie</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ccc5a7;
+        }
+
+        .navbar {
+            background-color: #455447;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .diagram-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px
+        }
+
+        .diagram-item {
+            flex: 0 0 calc(50% - 20px);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .diagram-item:hover {
+            transform: scale(1.05);
+        }
+
+        .diagram-item h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand text-white" href="#"> .</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Dashboard diagrammen</h1>
+        <div class="diagram-container">
+            <div class="diagram-item">
+                <h2>aantal bezoekers per data</h2>
+                <img src="foto/scatter1.jpg" width="400" height="300">
+            </div>
+            <div class="diagram-item">
+                <h2>anatal incidenten per type</h2>
+                <img src="foto/histogram.jpg" width="400" height="300">
+            </div>
+            <div class="diagram-item">
+                <h2>ernstigheid van incidenten<h2>
+                        <img src="foto/typesevdio.jpg" width="400" height="300">
+            </div>
+            <div class="diagram-item">
+                <h2>ernstigheid van incidenten 2</h2>
+                <img src="foto/typesevhor.jpg" width="400" height="300">
+            </div>
+            <div class="diagram-item">
+                <h2>aangeraden tunnelsysteem en verblijfplekken</h2>
+                <img src="map.png" width="500" height="500">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Diagrammen Presentatie</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ccc5a7;
+        }
+
+        .navbar {
+            background-color: #455447;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .banner {
+            width: 1000px;
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .diagram-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .model-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            flex: 1; /* Hiermee zorg je ervoor dat de twee foto's evenveel ruimte innemen */
+        }
+
+        .model-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.1s ease;
+        }
+
+        .model-item img:hover {
+            transform: scale(1.2);
+        }
+
+        .model-link {
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand text-white" href="#"> .</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Welkom bij onze diagrammen presentatie</h1>
+        <p>Onze presentatie biedt een verzameling van informatieve diagrammen om gegevens visueel te begrijpen. Verken
+            en ontdek de verschillende grafieken en diagrammen die we hebben samengesteld.</p>
+        <div class="diagram-container">
+            <img src="banner.jpeg" alt="Banner" class="banner">
+        </div>
+        <div class="diagram-container">
+            <div class="model-item">
+                <a href="site1.html" class="model-link">
+                    <img src="foto1.jpeg">
+                </a>
+            </div>
+            <div class="model-item">
+                <a href="site2.html" class="model-link">
+                    <img src="foto3.jpeg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
